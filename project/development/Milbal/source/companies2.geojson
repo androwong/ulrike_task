@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "companies2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": 1, "Text": "Lockheed Martin - Fort Worth", "Conflict": "Lockheed Martin", "Latitude": 32.772114, "Longitude": -97.445133, "ThemesString": "F-35 front section and final assembly", "MainTheme": "F-35 front section and final assembly", "FinalAssembly": "yes" }, "geometry": { "type": "Point", "coordinates": [ -97.445133, 32.772114 ] } },
+{ "type": "Feature", "properties": { "ID": 2, "Text": "Northrop Grumman - Palmdale", "Conflict": "Northrop Grumman", "Latitude": 34.640748, "Longitude": -118.071492, "ThemesString": "F-35 mid-section", "MainTheme": "F-35 mid-section", "FinalAssembly": "no" }, "geometry": { "type": "Point", "coordinates": [ -118.071492, 34.640748 ] } },
+{ "type": "Feature", "properties": { "ID": 3, "Text": "BAE Systems - Samlesbury", "Conflict": "BAE Systems", "Latitude": 53.776443, "Longitude": -2.573313, "ThemesString": "F-35 aft fuselage and horizontal tails", "MainTheme": "F-35 aft fuselage and horizontal tails", "FinalAssembly": "no" }, "geometry": { "type": "Point", "coordinates": [ -2.573313, 53.776443 ] } },
+{ "type": "Feature", "properties": { "ID": 4, "Text": "Leonardo - Cameri", "Conflict": "Leonardo", "Latitude": 45.53281, "Longitude": 8.672433, "ThemesString": "F-35 centre wing", "MainTheme": "F-35 centre wing", "FinalAssembly": "no" }, "geometry": { "type": "Point", "coordinates": [ 8.672433, 45.53281 ] } },
+{ "type": "Feature", "properties": { "ID": 5, "Text": "Lockheed Martin - Marietta", "Conflict": "Lockheed Martin", "Latitude": 33.927443, "Longitude": -84.531967, "ThemesString": "F-35 centre wing", "MainTheme": "F-35 centre wing", "FinalAssembly": "no" }, "geometry": { "type": "Point", "coordinates": [ -84.531967, 33.927443 ] } },
+{ "type": "Feature", "properties": { "ID": 6, "Text": "Pratt & Whitney - Middletown", "Conflict": "Pratt & Whitney", "Latitude": 41.54107, "Longitude": -72.561828, "ThemesString": "F135 turbojet engine", "MainTheme": "F135 turbojet engine", "FinalAssembly": "no" }, "geometry": { "type": "Point", "coordinates": [ -72.561828, 41.54107 ] } },
+{ "type": "Feature", "properties": { "ID": 7, "Text": "Rolls-Royce - Bristol", "Conflict": "Rolls-Royce", "Latitude": 51.525635, "Longitude": -2.568246, "ThemesString": "STOVL Lift System", "MainTheme": "STOVL Lift System", "FinalAssembly": "no" }, "geometry": { "type": "Point", "coordinates": [ -2.568246, 51.525635 ] } },
+{ "type": "Feature", "properties": { "ID": 8, "Text": "Northrop Grumman - Baltimore", "Conflict": "Northrop Grumman", "Latitude": 39.182996, "Longitude": -76.688785, "ThemesString": "AN\/APG-81 radar ", "MainTheme": "AN\/APG-81 radar ", "FinalAssembly": "no" }, "geometry": { "type": "Point", "coordinates": [ -76.688785, 39.182996 ] } }
+]
+}

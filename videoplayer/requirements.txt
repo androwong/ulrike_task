@@ -1,0 +1,3 @@
+Make this file responsive for mobile devices, same as this one:  https://www.nytimes.com/interactive/2019/10/30/world/middleeast/syria-turkey-maps.html?action=click&module=Top%20Stories&pgtype=Homepage
+For mobile:
+video should be on the whole screen and scrolling text should be much smaller

@@ -1,0 +1,61 @@
+	body {
+	    font-family: 'Roboto Slab', serif;
+	    text-align: center;
+	    font-weight: bold;
+	    font-size: 8vw;
+	    background-color: #b1adde;
+	    color: #267;
+	}
+	
+	.container {
+	    margin: 20px auto 0;
+	    position: relative;
+	    width: 90%;
+	}
+	
+	.pyramid {
+	    margin: 0 auto;
+	    width: 90%;
+	}
+	
+	img[usemap] {
+	    border: none;
+	    height: auto;
+	    max-width: 100%;
+	    width: auto;
+	}
+	
+	p {
+	    margin: 0;
+	}
+	
+	.div-popup {
+	    display: block;
+	    visibility: hidden;
+	    position: absolute;
+	    margin: auto;
+	    top: 40px;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 50%
+	}
+	/********************************* Responsive ****************************************/
+	
+	@media (min-width: 400px) {
+	    .cover-container {
+	        width: 100%;
+	        padding: 0;
+	        margin: 0;
+	        top: 4%;
+	    }
+	}
+	/* @media only screen and (max-width:1600px) and (min-width: 1510px) {
+	    #button-layer {
+	        top: 4%;
+	    }
+	    .colorpicker li img {
+	        width: 190px;
+	    }
+	} */
+	/*****************************************************************************************/

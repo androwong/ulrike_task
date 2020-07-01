@@ -1,0 +1,9 @@
+ID,Text,Conflict,Latitude,Longitude,ThemesString,MainTheme,FinalAssembly
+1,Lockheed Martin - Fort Worth,Lockheed Martin,32.772114,-97.445133,F-35 front section and final assembly,F-35 front section and final assembly,yes
+2,Northrop Grumman - Palmdale,Northrop Grumman,34.640748,-118.071492,F-35 mid-section,F-35 mid-section,no
+3,BAE Systems - Samlesbury,BAE Systems,53.776443,-2.573313,F-35 aft fuselage and horizontal tails,F-35 aft fuselage and horizontal tails,no
+4,Leonardo - Cameri,Leonardo,45.53281,8.672433,F-35 centre wing,F-35 centre wing,no
+5,Lockheed Martin - Marietta,Lockheed Martin,33.927443,-84.531967,F-35 centre wing,F-35 centre wing,no
+6,Pratt & Whitney - Middletown,Pratt & Whitney,41.54107,-72.561828,F135 turbojet engine,F135 turbojet engine,no
+7,Rolls-Royce - Bristol,Rolls-Royce,51.525635,-2.568246,STOVL Lift System,STOVL Lift System,no
+8,Northrop Grumman - Baltimore,Northrop Grumman,39.182996,-76.688785,AN/APG-81 radar ,AN/APG-81 radar ,no

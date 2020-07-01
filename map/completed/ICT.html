@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>ICT</title>
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/ClickOnChange4.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/ChangeImageOnClick4.js"></script>
+	</head>
+  <body class="text-center">
+		<div class="cover-container d-flex h-100 mx-auto flex-column">
+			<img src="img/AllI.jpg" alt="Map" class="img-fluid back" />
+			<img src="img/1-large.png" class="img-layer" id="map-1" />
+			<img src="img/2-large.png" class="img-layer" id="map-2" />
+			<img src="img/3-large.png" class="img-layer" id="map-3" />
+			<img src="img/4-large.png" class="img-layer" id="map-4" />
+			<img src="img/5-large.png" class="img-layer" id="map-5" />
+			<img src="img/6-large.png" class="img-layer" id="map-6" />
+			<img src="img/7-large.png" class="img-layer" id="map-7" />
+			<div id="button-layer">
+					<ul class="colorpicker">		
+						<li>
+							<button onclick="addImage('1');" id="btn1"><img id="img_btn1" src="img/1-small-grey.gif" /></button>
+						</li>                            						
+						<li>
+							<button onclick="addImage('2');" id="btn2"><img id="img_btn2" src="img/2-small-grey.gif" /></button>
+						</li>  
+						<li>
+							<button onclick="addImage('3');" id="btn3"><img id="img_btn3" src="img/3-small-grey.gif" /></button>
+						</li>  
+						<li>
+							<button onclick="addImage('4');" id="btn4"><img id="img_btn4" src="img/4-small-grey.gif" /></button>
+						</li>  
+						<li>
+							<button  onclick="addImage('5');" id="btn5"><img id="img_btn5" src="img/5-small-grey.gif" /></button>
+						</li>  
+						<li>
+							<button  onclick="addImage('6');" id="btn6"><img id="img_btn6" src="img/6-small-grey.gif" /></button>
+						</li>  
+						<li>
+							<button onclick="addImage('7');" id="btn7"><img id="img_btn7" src="img/7-small-grey.gif" /></button>
+						</li>  
+					</ul>
+			</div>
+		</div>
+		<script>
+			$( "li img" ).hover(function() {
+			   var str = $(this).attr('id');
+			   var id = str.substring(str.length - 1, str.length);
+			   $("#img_btn" + id).attr('src', 'img/'+ id + '-small.gif');
+			   $("#btn" + id).attr('style', '-webkit-filter:grayscale(0)');
+			   $("#map-" + id).addClass('active1');
+			}, function() {
+			   if($(this).parent().hasClass('active')) {
+				    return;
+			   }
+			   var str = $(this).attr('id');
+			   var id = str.substring(str.length - 1, str.length);
+			   $("#img_btn" + id).attr('src', 'img/'+ id + '-small-grey.gif');
+			   $("#btn" + id).attr('style', '-webkit-filter:grayscale(1)');
+			   $("#map-" + id).removeClass('active1');
+			});
+		</script>
+</body>
+</html>

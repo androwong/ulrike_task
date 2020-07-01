@@ -1,0 +1,82 @@
+  body {
+    margin: 0px;
+    font-family: sans-serif;
+  }
+  #map-content {
+    width: 100%;
+    height: 100%;
+	float:left;
+    margin: 0;
+  }
+
+
+.custom-popup .leaflet-popup-content-wrapper {
+//background:rgba(255,255,255,1);
+background:transparent;
+  color:black;
+  }
+
+ .custom-popup .leaflet-popup-tip {
+background:transparent;
+  color:transparent;
+  } 
+  
+ .custom-popup .leaflet-popup-container {
+background:transparent;
+  color:transparent;
+  } 
+  
+  
+  .iiss_main {
+  position:relative;
+  border-style: solid;
+  background:rgba(253,206,154,1);
+  //background:rgba(253,255,255,1);
+  border: 2px solid gray;
+  spacing:1px;
+  padding:6px;
+  color:black;
+  }
+  
+    
+  .marker-cluster {
+    opacity: 1 !important;
+	  }
+
+  .active-cluster-element {
+    opacity: 0.2;
+	  }
+
+  .select-row {
+    margin-top: 4px;
+    margin-bottom: 1px;
+    margin-left: 5px
+  }
+
+  h4 {
+    margin-bottom: 2px
+  }
+
+  select {
+    margin-left: 5px
+  }
+  
+  .circle {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+	background-image: url('../../../shared/images/circle.png');
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle2 {
+  background: #0000ff;
+  border-radius: 50%;
+  box-shadow: 4px 4px 3px grey; /* see http://www.w3schools.com/css/css3_shadows.asp */
+  -moz-box-shadow: 4px 4px 3px grey;
+  -webkit-box-shadow: 4px 4px 3px grey;
+}
+
+ 

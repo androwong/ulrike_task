@@ -1,0 +1,184 @@
+.cover-container {
+	max-width: 1600px;
+	padding: 0 !important;
+	position: relative;
+}
+#button-layer {
+	z-index:1000;
+	width:100%;
+	position: absolute;
+	top: 285px;
+	left: 20px;
+	padding:0px;
+	float:left;
+}
+.colorpicker {
+    list-style-type:none;
+	float:left;
+	width: 100%;
+
+}
+.colorpicker li {
+    float:left;
+    list-style-type:none;
+    text-align: center;
+	border: 0px;
+	margin-right:6px;
+}
+.colorpicker li:hover
+{
+	background-image:  url("../img/1-small.gif");
+}
+
+.colorpicker li img {
+    width: 210px;
+	height:191px;
+    height: auto;
+    cursor: pointer;
+	border: 0px;
+	padding: 0px;
+	
+}
+.back {
+	width:100%;
+	margin:0;
+	padding:0;
+}
+button{
+	padding: 0px;
+	margin:0px;
+	border: 0px;
+    -webkit-filter: grayscale(1); 
+    -webkit-transition:  all .8s ease-in-out;  
+}
+
+button:hover {
+	padding: 0px;
+	margin:0px;
+	border: 0px;
+	filter: none;
+	-webkit-filter: grayscale(0);
+	
+}
+button:active, button.active {
+	filter: none;
+	padding: 0px;
+	margin:0px;
+	border: 0px;
+	-webkit-filter: grayscale(0);
+}
+button:focus {
+	filter: none;
+	padding: 0px;
+	margin:0px;
+	border: 0px;
+	-webkit-filter: grayscale(0);
+}
+button:target {
+	    filter: none;
+	    padding: 0px;
+		margin:0px;
+		border: 0px;
+      -webkit-filter: grayscale(0);
+    
+}
+.related {
+	position: relative;
+}
+.wrapper {
+	position: relative;
+}
+.img-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+	display:none;
+}
+.img-layer.active {
+	display:block;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.h-100 {
+    height: 100%!important;
+}
+.flex-column {
+    -webkit-box-orient: vertical!important;
+    -webkit-box-direction: normal!important;
+    -ms-flex-direction: column!important;
+    flex-direction: column!important;
+}
+@media (min-width: 1200px){
+	.cover-container {
+		width: 100%;
+		padding:0;
+		margin:0;
+	}
+}
+@media only screen and (max-width:1600px) and (min-width: 1510px)
+{
+	#button-layer {top: 228px;}
+	.colorpicker li img {width: 190px;}
+
+}
+@media only screen and (max-width:1509px) and (min-width: 1400px)
+{
+	#button-layer { top: 228px;}
+	.colorpicker li img { width: 180px;}
+}
+@media only screen and (max-width:1399px) and (min-width: 1300px)
+{
+	#button-layer { top: 228px;}
+	.colorpicker li img { width: 165px;}
+}
+@media only screen and (max-width:1299px) and (min-width: 1200px)
+{
+	#button-layer { top: 228px;}
+	.colorpicker li img { width: 148px;}
+}
+@media only screen and (max-width:1199px) and (min-width: 1035px)
+{
+	#button-layer { top: 170px;}
+	.colorpicker li img { width: 127px;}
+}
+@media only screen and (max-width:1034px) and (min-width: 900px)
+{
+	#button-layer { top: 170px;}
+	.colorpicker li img { width: 108px;}
+}
+@media only screen and (max-width:899px) and (min-width: 780px)
+{
+	#button-layer { top: 130px;}
+	.colorpicker li img { width: 90px;}
+}
+@media only screen and (max-width:779px) and (min-width: 707px)
+{
+	#button-layer { top: 120px;}
+	.colorpicker li img { width: 80px;}
+}
+@media only screen and (max-width:706px) and (min-width: 600px)
+{
+	#button-layer { top: 100px;}
+	.colorpicker li img { width: 63px;}
+}
+@media only screen and (max-width:599px) and (min-width: 400px)
+{
+	#button-layer { top: 80px;left:0px}
+	.colorpicker li img { width: 40px;}
+}
+@media only screen and (max-width:399px) and (min-width: 200px)
+{
+	#button-layer { top: 58px;left:0px}
+	.colorpicker li img { width: 30px;}
+}
+@media only screen and (max-width:199px) and (min-width: 100px)
+{
+	#button-layer { top: 48px;left:0px}
+	.colorpicker li img { width: 30px;}
+}
+
+
+

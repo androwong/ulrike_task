@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syria Scrolling Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="contentheader">
+            <h1>IISS.ORG <br>How the New Syria Took Shape Russia, Turkey and Bashar al-Assad carved up northern Syria as the Americans retreated.</h1>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="content">
+            <p>In just a few weeks, the American withdrawal from northern Syria dramatically reordered power in the country after eight years of civil war.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>Here’s how Syria looked three weeks ago: <span class="green">American-backed Kurds</span> controlled the northeast, while the <span class="blue">Syrian government</span> controlled most of the rest.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p><span class="yellow">Turkish forces</span> were already in northwest Syria, but Turkey had long wanted to establish a roughly <span class="green">20-mile-deep buffer</span> along the whole border. It sees the Kurdish-led forces there as terrorists.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>But those same Kurdish-led forces were fighting alongside the United States against ISIS. Roughly <span class="red">1,000 American troops</span> were positioned across bases and outposts in northern Syria — including two bases near the Turkish
+                border.
+            </p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>On Oct. 6, President Recep Tayyip Erdogan called President Trump and said Turkey would invade. Mr. Trump immediately ordered <span class="red">troops to withdraw</span> from those two bases — allowing Turkey to move in and changing years of
+                American policy.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>Turkey followed by <span class="yellow">bombing Syrian towns</span> and sending ground troops over the border. The offensive displaced around 200,000 people and killed more than 200 civilians.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p><span class="yellow">Turkey reached the M4 highway</span>, a crucial road that connects two Kurdish population centers — Kobani in the west and Qamishli in the east. Control the M4 and you cut the <span class="green">Kurdish-led forces</span>in
+                two.
+            </p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>Abandoned by the United States, the Kurds had few options. In a dramatic shift, they made a deal with an American enemy — the <span class="blue">Syrian government</span>. The partnership opened the door for President Bashar al-Assad to try
+                to regain control of the whole country.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>The deal also allowed <span class="dblue">Russia</span>, which backs Mr. al-Assad, to help contain the Turkish incursion into Syria and enter areas that were under American protection just days before.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>As Americans continued to evacuate their bases, the United States signed a cease-fire deal with Turkey that demanded Kurdish forces leave the area where <span class="yellow">Turkey was advancing</span>. The deal essentially gave American assent
+                for Turkey’s plans in northern Syria.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>Five days later, Russia and Turkey divided up northern Syria: Turkey got the <span class="yellow">area it had captured</span> and a promise that the Kurds would push back 20 miles. Russia and Mr. al-Assad got the rest. It’s unclear what will
+                happen with <span class="green">the land the Kurds still control</span>.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>The changing landscape also threw a wrench into U.S. plans targeting the ISIS leader, Abu Bakr al-Baghdadi. The U.S. had to speed up the raid, and the Kurds, feeling betrayed, suspended their crucial security cooperation. <span class="orange">Al-Baghdadi was killed </span>despite
+                the obstacles.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>Four American adversaries gained under Syria’s new geography. Mr. al-Assad’s control expanded. Iran, a long-time Syrian ally, could gain a long supply route to its proxy Hezbollah in Lebanon.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <p>ISIS has an opening to regroup amid the chaos. And Russia cemented its status as the main foreign power in Syria.</p>
+        </div>
+    </section>
+
+
+    <div class="video_container">
+        <video class="vido vido-cover" id="v0" data-object-fit="cover">
+          <source src="test.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script src="objectFitPolyfill.min.js"></script>
+    <script src="sticky.js"></script>
+
+    <script>
+        enterView({
+            selector: 'section',
+            enter: function(el) {
+                el.classList.add('entered');
+            }
+        })
+
+        var frameNumber = 0, // start video at frame 0
+            // lower numbers = faster playback
+            playbackConst = 1000,
+
+            // select video element         
+            vid = document.getElementById('v0');
+
+
+        // Use requestAnimationFrame for smooth playback
+        function scrollPlay() {
+            var frameNumber = window.pageYOffset / playbackConst;
+            vid.currentTime = frameNumber;
+            window.requestAnimationFrame(scrollPlay);
+        }
+
+        window.requestAnimationFrame(scrollPlay);
+    </script>
+</body>
+
+</html>

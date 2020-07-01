@@ -1,0 +1,63 @@
+Dear Hai
+Go to the following file:
+project/development/Milbal/Milbal3.html
+
+Look at the blue icon in the middle of America.
+
+The goal is to add something to the js milbal.js in project/development/Milbal/js/milbal3.js
+
+The functionality added is:
+look at the companies3.js  in project/development/Milbal/js/
+That js file is being called in by milbal3.js
+
+The icons are called in by this code:
+
+// parse json data
+
+for ( var i = 0; i < iraq.length; ++i ) {
+
+	
+var popup = '<div class=iiss_main><b>Company:</b> ' + iraq[i].Icon+
+			  '<br/><b></b> ' + iraq[i].Text+'</div>';
+			  
+switch(iraq[i].Icon) {
+        case "Aircraft Production Line":
+            
+  marker = L.marker( [iraq[i].Latitude, iraq[i].Longitude], {icon: productionlineIcon} )
+                  .bindPopup( popup );
+ 		
+		break;
+		
+ 		case "Propulsion":
+  marker = L.marker( [iraq[i].Latitude, iraq[i].Longitude], {icon: PropulsionIcon} )
+                  .bindPopup( popup );
+ 
+            break;
+        
+		case "Radar":	
+  marker = L.marker( [iraq[i].Latitude, iraq[i].Longitude], {icon: RadarIcon} )
+                  .bindPopup( popup );
+ 
+            break;
+   
+        case "Aircraft Section Production":
+  marker = L.marker( [iraq[i].Latitude, iraq[i].Longitude], {icon: aircraftIcon} )
+                  .bindPopup( popup );
+ 
+ 
+}
+
+
+
+  markers.addLayer( marker );
+}
+ 
+
+
+Now the goal is to add an overlay circle over the blue icon. The blue icon refers to the first data set in companies3.js. This dataset is the only dataset where the FinalAssembly": "1" .
+The rest of the dataset have set the FinalAssembly": "0" .
+
+The overlay should be a yellow circle and should appear behind the blue icon, so basically on top of it. The code should be written in a way that if we have more than one FinalAssembly": "1" in the dataset that those other icons should also have a yellow circle background.
+
+Any questions, please ask.
+You may ignore all the other files , they are only there for testing.
